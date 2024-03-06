@@ -1,50 +1,47 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 120px;
-    background: #11141a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
 }
 
-.logo {
-    font-size: 25px;
+#logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
     color: #124076;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-weight: 600;
-}
-hr {
-    color: rgb(1, 76, 126);
+    font-size: 20px;
 }
 
-nav a {
-    font-size: 18px;
-    color: #124076;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+.topnav .icon {
+  display: none;
 }
 
-nav logo ,a:hover,
-nav a.active {
+.topnav ,a:hover,
+a.active {
     color: #F9E897;
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,39 +56,9 @@ section:nth-child(odd) {
 
 }
 
-.topnav {
-    background-color: #11141a;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
+   /* Mobile responsive  */
+
   /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
-  
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {

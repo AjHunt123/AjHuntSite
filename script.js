@@ -1,5 +1,5 @@
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let navLinks = document.querySelectorAll('header  a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -12,7 +12,7 @@ window.onscroll = () => {
             navLinks.forEach(link => {
                 link.classList.remove('active');
             });
-            document.querySelector(`header nav a[href*='${id}']`).classList.add('active');
+            document.querySelector(`header a[href*='${id}']`).classList.add('active');
         }
     });
 };

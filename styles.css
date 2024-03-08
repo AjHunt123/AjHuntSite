@@ -39,7 +39,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #FB2576;
+  color: #ffe6e6;
   text-align: center;
   padding: 14px 16px;
   font-size: 20px;
@@ -203,17 +203,52 @@ h4::before {
 }
 
 /* about */
-.about_container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background: #000000;
-  justify-content: center;
-
+#about{
+height: 100vh;
+width: 100%;
+background: #000000;
+justify-content: center;
+text-align: center;
+display: flex;
+flex-direction: column;
+color: #222;
 }
 
+.about_container{
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+}
 
-.card {
-  align-items: start;
-  height: auto;
+.about_container p {
+  font-size: 25px;
+  color: #ffe6e6;
+}
+
+.light-text {
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.light-text span {
+  transition: 0.5s;
+}
+.light-text:hover span:nth-child(1)
+{
+  margin-right:10px;
+}
+.light-text:hover span:nth-child(2)
+{
+  margin-right:10px;
+}
+.light-text:hover span 
+{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff;
+               0 0 40px #fff,
+               0 0 80px #fff,
+               0 0 120px #fff;
 }

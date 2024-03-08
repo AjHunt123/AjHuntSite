@@ -371,7 +371,7 @@ h4::before {
   display: inline-block;
 }
 
-.skill-per .tooltip {
+.skill-box .tooltip {
   display: none;
   position: absolute;
   left: 50%;
@@ -393,7 +393,7 @@ h4::before {
   bottom: -2px;
   height: 10px;
   width: 10px;
-  z-index: 1; /* Adjusted z-index */
+  z-index: 4; /* Adjusted z-index */
   background-color: #0b34eb;
   transform: translateX(-50%) rotate(45deg);
 }

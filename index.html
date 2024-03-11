@@ -21,7 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
 
 <body>
@@ -43,7 +43,7 @@
   <section id="home">
     <div class="bghero" id="backgroundImage">
       <div class="wavy">
-        <a href="#home" class="button">Web Developer</a>
+        <a href="#home" class="button-hero">Web Developer</a>
       </div>
 
       <div class="h1HeroText" id="herotext">
@@ -78,7 +78,7 @@
           <span class="title">HTML5</span>
           <div class="skill-bar">
             <span class="skill-per html">
-              <span class="tooltip">90%</span>
+              <span class="skill-percent">80%</span>
             </span>
           </div>
         </div>
@@ -86,7 +86,7 @@
           <span class="title">CSS3</span>
           <div class="skill-bar">
             <span class="skill-per css">
-              <span class="tooltip">70%</span>
+              <span class="skill-percent">75%</span>
             </span>
           </div>
         </div>
@@ -94,7 +94,7 @@
           <span class="title">BootStrap5</span>
           <div class="skill-bar">
             <span class="skill-per javascript">
-              <span class="tooltip">50%</span>
+              <span class="skill-percent">50%</span>
             </span>
           </div>
         </div>
@@ -102,7 +102,7 @@
           <span class="title">JavaScript</span>
           <div class="skill-bar">
             <span class="skill-per nodejs">
-              <span class="tooltip">30%</span>
+              <span class="skill-percent">40%</span>
             </span>
           </div>
         </div>
@@ -128,6 +128,22 @@
       }
     }
   </script>
+  <script>
+  ScrollReveal({ 
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+  
+  });
+
+    ScrollReveal().reveal('.about_container,.button-hero,.h1HeroText,.skills-container', {delay: 500});
+
+
+  </script>
+
+
+
 </body>
 
 </html>

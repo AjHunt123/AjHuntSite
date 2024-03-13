@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AjHuntWeb</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
   <link href="styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +14,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
 <body>
   <!-- header section -->
@@ -43,7 +44,7 @@
   <section id="home">
     <div class="bghero" id="backgroundImage">
       <div class="wavy">
-        <a href="#home" class="button-hero">Web Developer</a>
+        <a href="#home" class="button-hero">Front-End Developer</a>
       </div>
 
       <div class="h1HeroText" id="herotext">
@@ -59,11 +60,11 @@
     <div class="about_container">
       <P>
 
-        Greetings! 👋 With 2 years and 5 months in customer service and tech support, I've recently transitioned into
+        Greetings! With 2 years and 5 months in customer service and tech support, I've recently transitioned into
         website development. Over the past year, I've honed my skills, seamlessly merging creativity and functionality.
         Whether troubleshooting tech issues or crafting websites, I approach challenges with enthusiasm and a commitment
         to excellence. My journey is fueled by a passion for continuous learning and a love for technology. Let's
-        connect and share experiences in the ever-evolving landscape of development! 🚀
+        connect and share experiences in the ever-evolving landscape of development!
       </P>
     </div>
   </section>
@@ -72,47 +73,74 @@
 
   <section id="skill">
     <h3 class="skills-text"><span>Skills</span></h3>
-    <div class="skills-container">
-      <div class="container">
-        <div class="skill-box">
-          <span class="title">HTML5</span>
-          <div class="skill-bar">
-            <span class="skill-per html">
-              <span class="skill-percent">80%</span>
-            </span>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="skills-container">
+            <div class="container">
+              <div class="skill-box">
+                <span class="title">HTML5</span>
+                <div class="skill-bar">
+                  <span class="skill-per html">
+                    <span class="skill-percent">80%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">CSS3</span>
+                <div class="skill-bar">
+                  <span class="skill-per css">
+                    <span class="skill-percent">75%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">BootStrap5</span>
+                <div class="skill-bar">
+                  <span class="skill-per javascript">
+                    <span class="skill-percent">50%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">JavaScript</span>
+                <div class="skill-bar">
+                  <span class="skill-per nodejs">
+                    <span class="skill-percent">40%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="skill-box">
-          <span class="title">CSS3</span>
-          <div class="skill-bar">
-            <span class="skill-per css">
-              <span class="skill-percent">75%</span>
-            </span>
-          </div>
+        <div class="carousel-item">
+          <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptates reprehenderit dolorem at,
+            laboriosam est consectetur aut illum distinctio officiis ipsum minus sit aperiam facere? Totam ipsam sequi
+            molestias expedita!</h3>
         </div>
-        <div class="skill-box">
-          <span class="title">BootStrap5</span>
-          <div class="skill-bar">
-            <span class="skill-per javascript">
-              <span class="skill-percent">50%</span>
-            </span>
-          </div>
-        </div>
-        <div class="skill-box">
-          <span class="title">JavaScript</span>
-          <div class="skill-bar">
-            <span class="skill-per nodejs">
-              <span class="skill-percent">40%</span>
-            </span>
-          </div>
+        <div class="carousel-item">
+
         </div>
       </div>
-    </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
   </section>
 
 
 
   <section id="portfolio" style="height: 100vh; color: black;">Under Construction</section>
+
   <section id="contact" style="height: 100vh; color: black;">Under Construction</section>
 
 
@@ -129,20 +157,26 @@
     }
   </script>
   <script>
-  ScrollReveal({ 
-    reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 400
-  
-  });
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
 
-    ScrollReveal().reveal('.about_container,.button-hero,.h1HeroText,.skills-container', {delay: 500});
+    });
 
-
+    ScrollReveal().reveal('.about_container,.button-hero,.h1HeroText,.skills-container', { delay: 500 });
   </script>
 
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </body>
 
